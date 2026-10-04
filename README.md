@@ -1,16 +1,35 @@
-# React + Vite
+# Zenvio Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive SaaS landing page built with React, Vite and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Live Demo
+(Vercel link yahan lagana)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React (Vite)
+- Tailwind CSS
 
-## React Compiler
+## Project Structure
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Features.jsx
+│   ├── Pricing.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Design Choices
+- **Component-based:** each section is a separate reusable component.
+- **Responsive:** mobile-first layout using Tailwind breakpoints (`sm`, `md`, `lg`). Cards stack on mobile and form 2 to 3 columns on larger screens. The navbar links hide on small screens.
+- **Design system:** indigo as the main colour, gray for text, consistent spacing and a clear heading hierarchy.
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run Locally
+```
+npm install
+npm run dev
+```
